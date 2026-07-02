@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thakur Family Photo Gallery - Thakur Family Memories</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">&#10084; Thakur Family</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="family-tree.html">Family Tree</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="festivals.html">Festivals</a></li>
+        <li><a href="birthdays.html">Birthdays</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="memories.html">Memories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Thakur Family Photo Gallery</h1>
+      <p>Browse through our collection of cherished photographs capturing the Thakur family's beautiful moments.</p>
+    </div>
+  </section>
+
+  <section class="section section-bg-1">
+    <div class="container">
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="birthdays">Birthdays</button>
+        <button class="filter-btn" data-filter="weddings">Weddings</button>
+        <button class="filter-btn" data-filter="festivals">Festivals</button>
+        <button class="filter-btn" data-filter="vacations">Vacations</button>
+        <button class="filter-btn" data-filter="recent">Recent</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="birthdays">
+          <img src="https://images.unsplash.com/photo-1530103862676-de3c9a59cf38?w=400&h=400&fit=crop" alt="Birthday Party">
+          <div class="gallery-caption"><h4>Birthday Celebration</h4><p>2026</p></div>
+        </div>
+        <div class="gallery-item tall" data-category="festivals">
+          <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=400&h=600&fit=crop" alt="Festival">
+          <div class="gallery-caption"><h4>Dashain Festival</h4><p>2025</p></div>
+        </div>
+        <div class="gallery-item wide" data-category="vacations">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" alt="Beach Vacation">
+          <div class="gallery-caption"><h4>Beach Vacation</h4><p>2025</p></div>
+        </div>
+        <div class="gallery-item" data-category="weddings">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=400&fit=crop" alt="Wedding">
+          <div class="gallery-caption"><h4>Wedding Day</h4><p>2024</p></div>
+        </div>
+        <div class="gallery-item" data-category="festivals">
+          <img src="https://images.unsplash.com/photo-1545816250-5e6c7a91f907?w=400&h=400&fit=crop" alt="Diwali">
+          <div class="gallery-caption"><h4>Tihar Lights</h4><p>2025</p></div>
+        </div>
+        <div class="gallery-item tall" data-category="birthdays">
+          <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=400&h=600&fit=crop" alt="Birthday Cakes">
+          <div class="gallery-caption"><h4>Birthday Special</h4><p>2026</p></div>
+        </div>
+        <div class="gallery-item" data-category="recent">
+          <img src="https://images.unsplash.com/photo-1511895426328-dc8714213708?w=400&h=400&fit=crop" alt="Family Fun">
+          <div class="gallery-caption"><h4>Family Fun Day</h4><p>2026</p></div>
+        </div>
+        <div class="gallery-item wide" data-category="vacations">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=400&fit=crop" alt="Trip">
+          <div class="gallery-caption"><h4>Mountain Trip</h4><p>2024</p></div>
+        </div>
+        <div class="gallery-item" data-category="festivals">
+          <img src="https://images.unsplash.com/photo-1583345278446-ad861ddde97d?w=400&h=400&fit=crop" alt="Holi">
+          <div class="gallery-caption"><h4>Holi Colors</h4><p>2025</p></div>
+        </div>
+        <div class="gallery-item" data-category="weddings">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=400&fit=crop" alt="Wedding Ceremony">
+          <div class="gallery-caption"><h4>Wedding Ceremony</h4><p>2024</p></div>
+        </div>
+        <div class="gallery-item tall" data-category="recent">
+          <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&h=600&fit=crop" alt="Family Portrait">
+          <div class="gallery-caption"><h4>Family Portrait</h4><p>2026</p></div>
+        </div>
+        <div class="gallery-item" data-category="birthdays">
+          <img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?w=400&h=400&fit=crop" alt="Cake Cutting">
+          <div class="gallery-caption"><h4>Cake Cutting</h4><p>2025</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close">&times;</button>
+      <button class="lightbox-nav lightbox-prev">&#10094;</button>
+      <img src="" alt="Gallery Image">
+      <button class="lightbox-nav lightbox-next">&#10095;</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Thakur Family Memories. Made with love for our family.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" title="Back to Top">&#8593;</button>
+  <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.dataset.filter;
+          galleryItems.forEach(item => {
+            if (filter === 'all' || item.dataset.category === filter) {
+              item.classList.remove('hidden');
+              item.style.display = 'block';
+            } else {
+              item.classList.add('hidden');
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

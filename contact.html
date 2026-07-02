@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Our Family Memories</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">&#10084; Thakur Family</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="family-tree.html">Family Tree</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="festivals.html">Festivals</a></li>
+        <li><a href="birthdays.html">Birthdays</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="memories.html">Memories</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Contact the Thakur Family</h1>
+      <p>We'd love to hear from you. Share your memories, suggestions, or just say hello!</p>
+    </div>
+  </section>
+
+  <section class="section section-bg-1">
+    <div class="container">
+      <div class="card" style="max-width: 700px; margin: 0 auto;">
+        <form id="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
+          <div>
+            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Your Name</label>
+            <input type="text" required style="width: 100%; padding: 12px 18px; border: 2px solid #dfe6e9; border-radius: 12px; font-family: inherit; font-size: 1rem;">
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Email Address</label>
+            <input type="email" required style="width: 100%; padding: 12px 18px; border: 2px solid #dfe6e9; border-radius: 12px; font-family: inherit; font-size: 1rem;">
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Subject</label>
+            <select style="width: 100%; padding: 12px 18px; border: 2px solid #dfe6e9; border-radius: 12px; font-family: inherit; font-size: 1rem;">
+              <option>General Inquiry</option>
+              <option>Share a Memory</option>
+              <option>Add Photos</option>
+              <option>Suggestions</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; margin-bottom: 8px; font-weight: 500;">Message</label>
+            <textarea rows="5" required style="width: 100%; padding: 12px 18px; border: 2px solid #dfe6e9; border-radius: 12px; font-family: inherit; font-size: 1rem; resize: vertical;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start; padding: 15px 40px; font-size: 1rem;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-bg-2">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Information</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card text-center">
+          <div style="font-size: 2.5rem; margin-bottom: 15px;">&#128231;</div>
+          <h3>Email Us</h3>
+          <p>bishutthakur1234@gmail.com</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: 2.5rem; margin-bottom: 15px;">&#128222;</div>
+          <h3>Call Us</h3>
+          <p>+977 9865411439</p>
+        </div>
+        <div class="card text-center">
+          <div style="font-size: 2.5rem; margin-bottom: 15px;">&#128205;</div>
+          <h3>Find Us</h3>
+          <p>Our hearts are wherever the Thakur family gathers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Thakur Family Memories. Made with love for our family.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" title="Back to Top">&#8593;</button>
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you soon.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
